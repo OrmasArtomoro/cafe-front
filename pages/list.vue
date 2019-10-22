@@ -62,6 +62,30 @@ const dummyCafe = [
           table_unavailable:0
         }
     },
+    {
+        id:"2",
+        name:"Cafe A",
+        text: "Menikmati kopi di tempat yang nyaman menjadi poin plus. Karena itulah di cabang barunya. Warkop Brewok mencoba menghadirkan suasana senyaman mungkin. Berada di Jalan Terusan Candi Mendut No 37, cabang kedua Warkop Brewok ini mengusung tema backyard.",
+        image: "/warkop2.jpg",
+        tables: {
+          table_total: 35,
+          table_occupied: 11,
+          table_booked: 2,
+          table_unavailable:0
+        }
+    },
+    {
+        id:"1",
+        name:"Wakrop B",
+        text: "Menikmati kopi di tempat yang nyaman menjadi poin plus. Karena itulah di cabang barunya. Warkop Brewok mencoba menghadirkan suasana senyaman mungkin. Berada di Jalan Terusan Candi Mendut No 37, cabang kedua Warkop Brewok ini mengusung tema backyard.",
+        image: "/warkop3.JPG",
+        tables: {
+          table_total: 60,
+          table_occupied: 15,
+          table_booked: 10,
+          table_unavailable:0
+        }
+    },
 ]
 export default {
   data(){
