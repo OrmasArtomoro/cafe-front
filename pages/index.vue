@@ -17,7 +17,7 @@
               color="blue lighten-2"
               light
               large
-              href="/pre-made-themes"
+              @click="handleList"
             >
               Cari disini
             </v-btn>
@@ -173,6 +173,7 @@
     },
     methods:{
       handleList: function() {
+        this.$router.push("/list")
         console.log("List cliked")
       }
     }
