@@ -5,7 +5,6 @@
       <v-toolbar-title v-text="title"></v-toolbar-title>
     </v-toolbar>
         <nuxt />
-    <nuxt />
     <v-footer color="blue darken-2">
         <v-layout row wrap align-center>
           <v-flex xs12>

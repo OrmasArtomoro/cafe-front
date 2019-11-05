@@ -18,6 +18,10 @@ module.exports = {
       { href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'},
       { href: 'https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css'},
       { href: 'https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css'},
+    ],
+    script: [
+      {src: "https://www.google.com/recaptcha/api.js", async:true, defer:true},
+      {src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDi17-WDd-SPlZ_XtX6uioOeNS7-PEGFoc&callback=initMap", defer:true}
     ]
   },
   /*
