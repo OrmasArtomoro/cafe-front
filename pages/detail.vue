@@ -153,6 +153,9 @@
                       {{ listCafe.address }}  
                       {{ listCafe.description }}  
                     </v-card-text>
+                    <v-card-text>
+                      <div id="map"></div>
+                    </v-card-text>
                   </v-card>
                 </v-flex>
 
@@ -174,7 +177,7 @@ const dummyDetailCafe = {
         close_hour: "11pm",
         open_day: "Mon-Fri",
         close_day: "Sat-Sun",
-        review: "4.1",
+        review: 4.1,
         year_published: "2019",
         table_total: "25",
         type: "Cafe",
@@ -200,6 +203,34 @@ const currentTable = {
     table_unavailable:"0"
 }
 export default {
+    mounted: function(){
+        /**
+         * type : square radius (neighbourhood, property page), circle radius (apartment, room, page), point marker (logged in on apartment, room page)
+         */
+        // The location of Singapore
+        /*
+            lat : 1.3139843,
+            lng : 103.5640535,
+        */
+
+        //will be getting from props / api
+        let exactPosition = {lat: -7.9519006, lng: 112.6320553}
+
+        // The map, getting from the DOM
+        let mapObject = document.getElementById('map');
+
+        
+        // map config, refer to official google maps javascript api for documentation
+        let mapConfig = {
+            zoom: 14,
+            center: exactPosition,
+            disableDefaultUI: false
+        }
+
+        // instantiate google map
+        var map = new google.maps.Map(mapObject, mapConfig);
+        var marker = new google.maps.Marker({position: exactPosition, map: map});
+    },
   data(){
     return {
       listCafe: dummyDetailCafe
@@ -207,3 +238,10 @@ export default {
   }   
 }
 </script>
+<style scoped>
+#map {
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+ }
+</style>

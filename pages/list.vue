@@ -34,11 +34,13 @@
                     </v-card-text>
                     <v-progress-linear
                       background-opacity="0.5"
-                      height="10px"
+                      height="20px"
                       rounded
                       :value="(item.tables.table_occupied + item.tables.table_booked) / (item.tables.table_total - item.tables.table_unavailable) * 100"
                       color="light-green"
-                    ></v-progress-linear>
+                    >
+                    {{ (item.tables.table_occupied + item.tables.table_booked) + '/' + (item.tables.table_total - item.tables.table_unavailable)}}
+                    </v-progress-linear>
                   </v-card>
                 </v-flex>
 
