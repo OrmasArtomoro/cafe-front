@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list renders properly 1`] = `
+"<section>
+  <v-layout column=\\"\\" wrap=\\"\\" align-center=\\"\\" class=\\"my-12\\">
+    <v-flex xs12=\\"\\" sm4=\\"\\" class=\\"my-4\\">
+      <div class=\\"text-center\\">
+        <h2 class=\\"headline\\">Cafe populer di Malang</h2> <span class=\\"subheading\\">
+                Cari cafe favoritmu disini!
+              </span>
+      </div>
+    </v-flex>
+    <v-flex xs12=\\"\\">
+      <v-container grid-list-xl=\\"\\">
+        <v-layout row=\\"\\" wrap=\\"\\" align-center=\\"\\">
+          <v-flex xs12=\\"\\" md4=\\"\\">
+            <v-card flat=\\"\\" class=\\"transparent\\">
+              <v-card-text class=\\"text-center\\"><img src=\\"/warkop1.jpeg\\" width=\\"150\\"></v-card-text>
+              <v-card-title primary-title=\\"\\" class=\\"layout justify-center\\">
+                <div class=\\"headline text-center\\">Wakrop Brewok</div>
+              </v-card-title>
+              <v-card-text><span class=\\"elipsis\\">Menikmati kopi di tempat yang nyaman menjadi poin plus. Karena itulah di cabang barunya. Warkop Brewok mencoba menghadirkan suasana senyaman mungkin. Berada di Jalan Terusan Candi Mendut No 37, cabang kedua Warkop Brewok ini mengusung tema backyard.</span></v-card-text>
+              <v-progress-linear background-opacity=\\"0.5\\" height=\\"20px\\" rounded=\\"\\" value=\\"40\\" color=\\"light-green\\">
+                10/25
+              </v-progress-linear>
+            </v-card>
+          </v-flex>
+          <v-flex xs12=\\"\\" md4=\\"\\">
+            <v-card flat=\\"\\" class=\\"transparent\\">
+              <v-card-text class=\\"text-center\\"><img src=\\"/warkop2.jpg\\" width=\\"150\\"></v-card-text>
+              <v-card-title primary-title=\\"\\" class=\\"layout justify-center\\">
+                <div class=\\"headline text-center\\">Cafe A</div>
+              </v-card-title>
+              <v-card-text><span class=\\"elipsis\\">Menikmati kopi di tempat yang nyaman menjadi poin plus. Karena itulah di cabang barunya. Warkop Brewok mencoba menghadirkan suasana senyaman mungkin. Berada di Jalan Terusan Candi Mendut No 37, cabang kedua Warkop Brewok ini mengusung tema backyard.</span></v-card-text>
+              <v-progress-linear background-opacity=\\"0.5\\" height=\\"20px\\" rounded=\\"\\" value=\\"37.142857142857146\\" color=\\"light-green\\">
+                13/35
+              </v-progress-linear>
+            </v-card>
+          </v-flex>
+          <v-flex xs12=\\"\\" md4=\\"\\">
+            <v-card flat=\\"\\" class=\\"transparent\\">
+              <v-card-text class=\\"text-center\\"><img src=\\"/warkop3.JPG\\" width=\\"150\\"></v-card-text>
+              <v-card-title primary-title=\\"\\" class=\\"layout justify-center\\">
+                <div class=\\"headline text-center\\">Wakrop B</div>
+              </v-card-title>
+              <v-card-text><span class=\\"elipsis\\">Menikmati kopi di tempat yang nyaman menjadi poin plus. Karena itulah di cabang barunya. Warkop Brewok mencoba menghadirkan suasana senyaman mungkin. Berada di Jalan Terusan Candi Mendut No 37, cabang kedua Warkop Brewok ini mengusung tema backyard.</span></v-card-text>
+              <v-progress-linear background-opacity=\\"0.5\\" height=\\"20px\\" rounded=\\"\\" value=\\"41.66666666666667\\" color=\\"light-green\\">
+                25/60
+              </v-progress-linear>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-flex>
+  </v-layout>
+</section>"
+`;

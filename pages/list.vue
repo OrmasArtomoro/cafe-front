@@ -90,6 +90,22 @@ const dummyCafe = [
     },
 ]
 export default {
+   async asyncData({ req, res, $axios, params }) {
+
+        //api call for apartment data
+        const data = await $axios.$get(`https://cafe-api.000webhostapp.com/index.php/Rest_cafe`)
+        .then((res)=>{
+            return res
+        }).catch((err)=>{
+            console.log(err)
+        })
+        console.log(data)
+        return {
+          cafeData: data
+        }
+
+
+    },
   data(){
     return {
       listCafe: dummyCafe

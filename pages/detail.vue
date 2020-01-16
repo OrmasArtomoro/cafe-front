@@ -136,8 +136,25 @@
                     </v-card-text>
                     <v-flex>
                         <v-card>
-                            <v-card-text class="display-1 text-left">
-                                Menu 1
+                            <v-card-text class="subtitle-3 text-left">
+                                <v-simple-table>
+                                <template v-slot:default>
+                                  <thead>
+                                    <tr>
+                                      <th class="text-left">Nama Menu</th>
+                                      <th class="text-left">Harga</th>
+                                      <th class="text-left">Gambar</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr v-for="(item, index) in menuData" :key="index">
+                                      <td>{{ item.nama_menu }}</td>
+                                      <td>{{ item.harga }}</td>
+                                      <td>{{ item.gambar }}</td>
+                                    </tr>
+                                  </tbody>
+                                </template>
+                              </v-simple-table>
                             </v-card-text>
                         </v-card>
                     </v-flex>
@@ -203,6 +220,22 @@ const currentTable = {
     table_unavailable:"0"
 }
 export default {
+    async asyncData({ req, res, $axios, params }) {
+
+        //api call for apartment data
+        const data = await $axios.$get(`https://cafe-api.000webhostapp.com/index.php/Rest_menu`)
+        .then((res)=>{
+            return res
+        }).catch((err)=>{
+            console.log(err)
+        })
+        console.log(data)
+        return {
+          menuData: data
+        }
+
+
+    },
     mounted: function(){
         /**
          * type : square radius (neighbourhood, property page), circle radius (apartment, room, page), point marker (logged in on apartment, room page)
